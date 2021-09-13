@@ -23,14 +23,14 @@ public class RetoCuatro {
         boolean salir = false;
         int tipoCuenta;
         int operacion;
+        double deposito;
+        double retiro;
         
-        TarjetaCredito credito = new TarjetaCredito(-100.00, 100.00 , 0.15);
+        TarjetaCredito credito = new TarjetaCredito(-1000.00, 0.15);
         
-        TarjetaDebito debito = new TarjetaDebito(900.00, 100.00);
+        TarjetaDebito debito = new TarjetaDebito(1000.00);
         
-        CuentaAhorro ahorro = new CuentaAhorro(3000.00, 1000.00, 0.10);
-        
-        //CuentaBase prueba = new CuentaBase();
+        CuentaAhorro ahorro = new CuentaAhorro(10000.00, 0.10);
 
         while(salir != true){
             
@@ -62,7 +62,7 @@ public class RetoCuatro {
                     }
                     if(operacion == 2){
                         System.out.println("Ingrese la cantidad a depositar: \n");
-                        double deposito = Double.parseDouble(entrada.nextLine());
+                        deposito = Double.parseDouble(entrada.nextLine());
 
                         credito.depositar(deposito);
 
@@ -72,7 +72,7 @@ public class RetoCuatro {
                     }
                     if(operacion == 3){
                         System.out.println("Ingrese la cantidad a retirar: \n");
-                        double retiro = Double.parseDouble(entrada.nextLine());
+                        retiro = Double.parseDouble(entrada.nextLine());
 
                         credito.retirar(retiro);
 
@@ -107,7 +107,7 @@ public class RetoCuatro {
                     }
                     if(operacion == 2){
                         System.out.println("Ingrese la cantidad a depositar: \n");
-                        double deposito = Double.parseDouble(entrada.nextLine());
+                        deposito = Double.parseDouble(entrada.nextLine());
 
                         debito.depositar(deposito);
 
@@ -117,7 +117,7 @@ public class RetoCuatro {
                     }
                     if(operacion == 3){
                         System.out.println("Ingrese la cantidad a retirar: \n");
-                        double retiro = Double.parseDouble(entrada.nextLine());
+                        retiro = Double.parseDouble(entrada.nextLine());
 
                         debito.retirar(retiro);
 
@@ -125,7 +125,7 @@ public class RetoCuatro {
                         
                         break;
                     }
-                    
+                   
                 case 3:
                     System.out.println("Usted seleccionó: " + ahorro.tipoCuenta()+ "\n");
                     
@@ -143,7 +143,7 @@ public class RetoCuatro {
                     }
                     if(operacion == 2){
                         System.out.println("Ingrese la cantidad a depositar: \n");
-                        double deposito = Double.parseDouble(entrada.nextLine());
+                        deposito = Double.parseDouble(entrada.nextLine());
 
                         ahorro.depositar(deposito);
 
@@ -153,7 +153,7 @@ public class RetoCuatro {
                     }
                     if(operacion == 3){
                         System.out.println("Ingrese la cantidad a retirar: \n");
-                        double retiro = Double.parseDouble(entrada.nextLine());
+                        retiro = Double.parseDouble(entrada.nextLine());
 
                         ahorro.retirar(retiro);
 

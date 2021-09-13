@@ -12,20 +12,14 @@ package retocuatro;
 public class CuentaBase {
     
     private double saldo;
-    private double apertura;
     
-    public CuentaBase(double saldo, double apertura){
-        this.saldo = saldo;
-        this.apertura = apertura;
+    public CuentaBase(double apertura){
+        this.saldo = apertura;
     }
     
     public String tipoCuenta(){
         return null;      
     }
-    
-    public double abrirCuenta(){
-        return apertura;
-    }    
     
     public void setSaldo(double saldo){
         this.saldo = saldo;

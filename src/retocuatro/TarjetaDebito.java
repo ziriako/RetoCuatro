@@ -8,11 +8,11 @@ package retocuatro;
 /**
  *
  * @author Ziriako
- */
+*/ 
 public class TarjetaDebito extends CuentaBase{
     
-    public TarjetaDebito(double saldo, double apertura){
-            super(saldo, apertura);
+    public TarjetaDebito(double apertura){
+            super(apertura);
     }
     
     @Override

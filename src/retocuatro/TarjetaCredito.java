@@ -13,12 +13,10 @@ public class TarjetaCredito extends CuentaBase{
     
     protected double interes;
     
-    public TarjetaCredito(double saldo, double apertura, double interes){
-            super(saldo, apertura);
+    public TarjetaCredito(double apertura, double interes){
+            super(apertura);
             this.interes=interes;
     }
-    
-    
     
     @Override
     public String tipoCuenta(){
