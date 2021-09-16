@@ -50,8 +50,7 @@ public class RetoCuatro {
                     System.out.println("Seleccione la operación a realizar: \n"
                         + "1.- Consulta de saldo \n"
                         + "2.- Depósito \n"
-                        + "3.- Retiro \n"
-                        + "4.- Calcular Interés \n"
+                        + "3.- Calcular Interés \n"
                     ) ;
 
                     operacion = Integer.parseInt(entrada.nextLine()); 
@@ -71,15 +70,6 @@ public class RetoCuatro {
                         break;
                     }
                     if(operacion == 3){
-                        System.out.println("Ingrese la cantidad a retirar: \n");
-                        retiro = Double.parseDouble(entrada.nextLine());
-
-                        credito.retirar(retiro);
-
-                        System.out.println("Su saldo después del retiro es: \n" + credito.getSaldo() + "\n");
-                    }
-                    
-                    if(operacion == 4){
                         System.out.println("Calculando interés, Espere... \n");
                         
                         credito.calcularInteres();
@@ -132,8 +122,7 @@ public class RetoCuatro {
                     System.out.println("Seleccione la operación a realizar: \n"
                         + "1.- Consulta de saldo \n"
                         + "2.- Depósito \n"
-                        + "3.- Retiro \n"
-                        + "4.- Invertir \n");
+                        + "3.- Invertir \n");
 
                     operacion = Integer.parseInt(entrada.nextLine()); 
 
@@ -151,17 +140,8 @@ public class RetoCuatro {
                         
                         break;
                     }
+                    
                     if(operacion == 3){
-                        System.out.println("Ingrese la cantidad a retirar: \n");
-                        retiro = Double.parseDouble(entrada.nextLine());
-
-                        ahorro.retirar(retiro);
-
-                        System.out.println("Su saldo después del retiro es: \n" + ahorro.getSaldo() + "\n");
-                        
-                        break;
-                    }
-                    if(operacion == 4){
                         System.out.println("Calculando interés, Espere... \n");
                         
                         ahorro.invertir();

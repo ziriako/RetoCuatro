@@ -11,7 +11,7 @@ package retocuatro;
  */
 public class CuentaBase {
     
-    private double saldo;
+    protected double saldo;
     
     public CuentaBase(double apertura){
         this.saldo = apertura;
@@ -32,10 +32,5 @@ public class CuentaBase {
     public void depositar(double deposito){ 
         this.saldo+=deposito; 
     } 
-    
-    public void retirar(double retiro){ 
-        this.saldo-=retiro; 
-    }
-    
     
 }

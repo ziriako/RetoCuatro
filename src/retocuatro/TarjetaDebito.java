@@ -20,5 +20,7 @@ public class TarjetaDebito extends CuentaBase{
         String cadena = "Tarjeta de débito";    
         return cadena;
     }
-    
+    public void retirar(double retiro){ 
+        this.saldo-=retiro; 
+    }
 }
